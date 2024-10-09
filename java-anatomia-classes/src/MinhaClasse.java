@@ -2,9 +2,18 @@ public class MinhaClasse {
     
 public static void main (String [] args) {
 
-    System.out.print ("Olá turma, sejam bem-vindos");
+    String primeiroNome = "Alison";
+    String segundoNome = "Souza";
 
-    final String BR = "Brasil";
+    String nomeCompleto = nomeCompleto(primeiroNome, segundoNome);
+
+    System.out.println(nomeCompleto);
+
+}
+
+public static String nomeCompleto (String primeiroNome, String SegundoNome){
+
+    return "Resultado do método " + primeiroNome.concat(" ").concat(SegundoNome);
 
 }
 
